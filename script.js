@@ -8,9 +8,7 @@ document.addEventListener("DOMContentLoaded", function() {
             nav.classList.remove("scrolled");
         }
     });
-});
 
-document.addEventListener("DOMContentLoaded", function() {
     // Get all the navigation links
     const navLinks = document.querySelectorAll(".nav-links a");
 
@@ -19,6 +17,14 @@ document.addEventListener("DOMContentLoaded", function() {
         link.addEventListener("click", function(event) {
             // Prevent the default behavior of the link
             event.preventDefault();
+
+            // Remove the "active" class from all links
+            navLinks.forEach(function(navLink) {
+                navLink.classList.remove("active");
+            });
+
+            // Add the "active" class to the clicked link
+            link.classList.add("active");
 
             // Get the target section's ID from the link's href
             const targetId = link.getAttribute("href").substring(1);

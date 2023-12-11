@@ -38,7 +38,6 @@ section {
     flex-shrink: 0;
     background: linear-gradient(to top, var(--white), var(--black)); /* Gradient colors, adjust as needed */
     transition: background-color 0.3s ease;
-
 }
 
 
@@ -64,18 +63,17 @@ section {
 .nav-links a:hover {
     color: var(--white);
     font-weight: bolder;
-    text-decoration: overline underline;
+    letter-spacing: 15px;
 }
 
 /* Add this style for the active link */
 .nav-links a.active {
     color: var(--white);
-    font-weight: lighter;
+    font-weight: bolder;
     position: relative;
     font-size: 25px;
     letter-spacing: 15px;
-    z-index: 99;
-    top:20%;
+
 }
 
 /* About Section */
