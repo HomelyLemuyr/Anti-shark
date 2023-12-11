@@ -73,7 +73,6 @@ section {
     position: relative;
     font-size: 25px;
     letter-spacing: 15px;
-
 }
 
 /* About Section */
@@ -99,7 +98,6 @@ section {
     display: flex;
     flex-direction: row;
     padding: 20px 50px;
-    text-align: justify;
     white-space: pre-line;
     line-height: 1.5;
     justify-content: space-around;
@@ -117,17 +115,15 @@ section {
 }
 
 #about .info p{
-    margin-top: 0;
     color: var(--dark_gray);
     font-family: var(--Inter);
     font-weight: 500;
     font-size: 15px;
     line-height: 2;
     letter-spacing: 2px;
-    align-self:center;
-
     max-width:700px;
     height:auto;
+    text-align: justify;
 }
 
 /* Products Section */
