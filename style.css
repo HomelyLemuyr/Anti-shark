@@ -110,8 +110,9 @@ section {
     color: var(--yellow);
     font-family: var(--Cutive);
     font-weight: lighter;
+    letter-spacing: 10px;
     font-size: 50px;
-    text-shadow: 2px 2px 4px var(--black);
+    text-shadow: 2px 2px 2px var(--black);
 }
 
 #about .info p{
