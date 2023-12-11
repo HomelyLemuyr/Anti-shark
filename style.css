@@ -1,0 +1,146 @@
+
+/* Fonts */
+
+@import url('https://fonts.googleapis.com/css2?family=Cutive&family=Inter:wght@300;400;500&display=swap');
+
+
+
+
+/* Color Palette / Fonts */
+:root {
+    --yellow: #e6c15b;
+    --black:#2E2528;
+    --white: #FEFEFE ;
+    --dark_gray: #575965;
+    --gray: #868C98;
+    --Cutive: 'Cutive', serif;
+    --Inter: 'Inter', sans-serif;
+}
+
+body {
+    scroll-behavior: smooth;
+    margin: 0;
+    padding: 0;
+   
+}
+
+section {
+    font-family: var(--Inter);
+    padding: 20px 80px;
+} 
+
+#nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: auto;
+    z-index: 1000;
+    flex-shrink: 0;
+    background: linear-gradient(to top, var(--white), var(--black)); /* Gradient colors, adjust as needed */
+    transition: background-color 0.3s ease;
+
+}
+
+
+.nav-links {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    list-style: none;
+    padding: 20px 20px;
+    align-self: center;
+}
+
+.nav-links a {
+    color: var(--yellow);
+    font-family: var(--Cutive);
+    font-size: 15px;
+    text-decoration: none;
+    line-height: normal;
+    letter-spacing: 10.5px;
+
+}
+
+.nav-links a:hover {
+    color: var(--white);
+    font-weight: bolder;
+    text-decoration: overline underline;
+}
+
+/* Add this style for the active link */
+.nav-links a.active {
+    color: var(--white);
+    font-weight: lighter;
+    position: relative;
+    font-size: 25px;
+    letter-spacing: 15px;
+    z-index: 99;
+    top:20%;
+}
+
+/* About Section */
+#about {
+    display: flex;
+    flex-direction: column; /* Change to column to stack elements vertically */
+    align-items: center; /* Align items to the left */
+    padding: 40px 40px;
+}
+
+.logo {
+    align-self: center; /* Align logo to the right within the column */
+    padding: 10px 10px;
+}
+
+.logo img {
+    width: 300px;
+    height: auto; /* Maintain aspect ratio */
+
+}
+
+#about .info {
+    display: flex;
+    flex-direction: row;
+    padding: 20px 50px;
+    text-align: justify;
+    white-space: pre-line;
+    line-height: 1.5;
+    justify-content: space-around;
+    gap: 70px;
+}
+
+#about h2 {
+    margin-top: 100px;
+    margin-bottom: 0;
+    color: var(--yellow);
+    font-family: var(--Cutive);
+    font-weight: lighter;
+    font-size: 50px;
+    text-shadow: 2px 2px 4px var(--black);
+}
+
+#about .info p{
+    margin-top: 0;
+    color: var(--dark_gray);
+    font-family: var(--Inter);
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 2;
+    letter-spacing: 2px;
+    align-self:center;
+
+    max-width:700px;
+    height:auto;
+}
+
+/* Products Section */
+
+#products {
+    display: flex;
+    flex-direction: row; /* Change to row to stack elements horizontally */
+    align-items: center; /* Align items to the center */
+    padding: 40px 40px;
+}
+
+
+
+
