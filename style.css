@@ -28,6 +28,12 @@ section {
     font-family: var(--Inter);
     padding: 20px 80px;
 } 
+footer p{
+    font-family: var(--Inter);
+    padding: 20px 80px;
+    color: var(--gray);
+    text-align: center;
+}
 
 #nav {
     position: fixed;
@@ -104,7 +110,7 @@ section {
     gap: 70px;
 }
 
-#about h2 {
+#about h2{
     margin-top: 100px;
     margin-bottom: 0;
     color: var(--yellow);
@@ -139,6 +145,7 @@ section {
 }
 
 .product-form {
+    margin-top: 100px;
     display: flex;
     flex-direction: column;
     max-width:100%;
@@ -168,11 +175,20 @@ section {
 
 /* Contact Section */
 
+
+#contacts {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 .socials,
 .contact-form {
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+.socials {
+    margin-top: 100px;
 }
 
 .socials h2 {
@@ -214,6 +230,7 @@ section {
     box-sizing: border-box; /* Ensures the padding and border are included in the total width */
     align-self: center;
     margin: auto;
+    border-radius: .5rem;
 }
 .contact-form textarea {
     resize: none; /* Disallow vertical resizing */
@@ -236,7 +253,8 @@ section {
     border-radius: 5rem;
     width: 200px;
     height: auto;
-    padding: 10px 5px;
+    padding: 10px 10px;
+    margin: 20px;
     text-align: center;
     box-shadow: 0px 4px 4px 0px var(--gray);
 }
@@ -248,10 +266,10 @@ section {
     letter-spacing: 3px;
 }
 
-.btn:hover,
-.btn a:hover {
+.btn:hover {
     background-color: var(--black);
-    color: var(--yellow);   
+    box-shadow: 0px 4px 4px 0px var(--yellow);
+ 
 }
 
 
