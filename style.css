@@ -115,7 +115,7 @@ section {
     text-shadow: 2px 2px 2px var(--black);
 }
 
-#about .info-form p
+#about .info-form p,
 .socials p {
     color: var(--dark_gray);
     font-family: var(--Inter);
