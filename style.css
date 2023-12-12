@@ -115,7 +115,8 @@ section {
     text-shadow: 2px 2px 2px var(--black);
 }
 
-#about .info-form p {
+#about .info-form p
+.socials p {
     color: var(--dark_gray);
     font-family: var(--Inter);
     font-weight: 500;
@@ -134,7 +135,126 @@ section {
     flex-direction: row; /* Change to row to stack elements horizontally */
     align-items: center; /* Align items to the center */
     padding: 40px 40px;
+    justify-content: space-around;
 }
+
+.product-form {
+    display: flex;
+    flex-direction: column;
+    max-width:100%;
+    max-height: auto;
+    box-shadow: 0px 2px 2px 0px var(--dark_gray);
+    border-radius: 25px;
+    border: 1px solid var(--dark_gray);
+}
+
+.product-form h2 {
+    text-align:center;
+    font-weight: lighter;
+    font-family: var(--Cutive);
+    letter-spacing: 3px;
+    padding: 10px;
+}
+.product-form img {
+    height: auto;
+    max-width: 350px;
+    padding: 20px 30px;
+    border-radius: 3.5rem;
+}
+
+
+
+
+
+/* Contact Section */
+
+.socials,
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.socials h2 {
+    margin-bottom: 30px;
+    color: var(--dark_gray);
+    font-family: var(--Cutive);
+    font-weight: light;
+    letter-spacing: 5px;
+    font-size: 25px;
+}
+
+.socials p {
+    font-weight: bold;
+    color: var(--yellow);
+    text-shadow: 2px 2px 0px var(--black);
+    letter-spacing: 3px;
+    font-size: 35px;
+
+}
+
+.contact-icon {
+    padding:5px;
+    height: 5rem;
+    cursor: pointer;
+}
+
+.contact-form {
+    align-items: flex-start;
+    padding: 10px 30px;
+    gap: 20px;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 500px; /* Adjusted width to account for padding and border */
+    padding: 10px;
+    border: 1px solid #ccc;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    box-sizing: border-box; /* Ensures the padding and border are included in the total width */
+    align-self: center;
+    margin: auto;
+}
+.contact-form textarea {
+    resize: none; /* Disallow vertical resizing */
+    min-height: 200px; /* Set a minimum height */
+}
+
+.contact-form input::placeholder,
+.contact-form textarea::placeholder{
+    color: var(--gray);
+    font-family: var(--Cutive);
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 4px;
+}
+
+.btn {
+    background-color: var(--yellow);
+    border-radius: 5rem;
+    width: 200px;
+    height: auto;
+    padding: 10px 5px;
+    text-align: center;
+    box-shadow: 0px 4px 4px 0px var(--gray);
+}
+
+.btn a {
+    color: var(--white);
+    text-decoration: none;
+    font-family: var(--Cutive);
+    letter-spacing: 3px;
+}
+
+.btn:hover,
+.btn a:hover {
+    background-color: var(--black);
+    color: var(--yellow);   
+}
+
+
 
 
 
