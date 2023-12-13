@@ -20,7 +20,7 @@
     <section id="about">
         <h2>Anti Shark</h2>
 
-        <form class="info-form">            
+        <div class="info-form">            
             <div class="logo"><img src="./assets/logo.png" alt="Logo image"></div>
             <!-- Replace the placeholder text in <p> with your text as needed -->
             <p> 
@@ -30,7 +30,7 @@
                 They not only maintain the species below them in the food chain, but also indirectly maintain seagrass and coral reef habitats.
                 Without them, other predatory fish would reduce the numbers of herbivores, which in turn would allow algae to dominate over coral reefs.
             </p>
-        </from>
+        </div>
     <!-- Products Section -->
     </section>
     <section id="products">
@@ -39,6 +39,7 @@
             <div class="image">
                 <img src="/assets/t-shirt_model.jpg" alt="T-Short Model">
             </div>
+
                 <p>
                     Regular Fit
                     Mid weight, 180 GSM, 28-singles
@@ -60,6 +61,30 @@
                 <p class="note">
                     (Model wears: LRG and 6' tall)
                 </p>
+                <p>
+                    Available colours:
+                </p>
+                <div class="color-palette">
+                    <div class="color" style="--color: #EEEEF0;"><p>White</p></div>
+                    <div class="color" style="--color: #E2DBCB;"><p>Ecru</p></div>
+                    <div class="color" style="--color: #FADBE0;"><p>Pink</p></div>
+                    <div class="color" style="--color: #F4B98D;"><p>Peach</p></div>
+                    <div class="color" style="--color: #F4A31C;"><p>Gold</p></div>
+                    <div class="color" style="--color: #2D3246;"><p>Midnight Blue</p></div>
+                    <div class="color" style="--color: #4B161C;"><p>Burgundy</p></div>
+                    <div class="color" style="--color: #B20007;"><p>Red</p></div>
+                    <div class="color" style="--color: #EA702D;"><p>Orange</p></div>
+                    <div class="color" style="--color: #1C1E2A;"><p>Navy</p></div>
+                    <div class="color" style="--color: #14341D;"><p>Forest Green</p></div>
+                    <div class="color" style="--color: #4B442A;"><p>Army</p></div>
+                    <div class="color" style="--color: #E2E2E4;"><p>White Marle</p></div>
+                    <div class="color" style="--color: #ADADAF;"><p>Gray Marle</p></div>
+                    <div class="color" style="--color: #363638;"><p>Asphalt Marle</p></div>
+                    <div class="color" style="--color: #323031;"><p>Coal</p></div>
+                    <div class="color" style="--color: #1C1C1C;"><p>Black</p></div>
+                    <!-- Add more color divs as needed -->
+                </div>
+
         </div>
         <dv class="product-form">
             <h2>Hoodie</h2>
@@ -87,6 +112,29 @@
                 <p class="note">
                     (Model wears: MED and 6' tall)
                 </p>
+                <p>
+                    Available colours:
+                </p>
+                <div class="color-palette">
+                    <div class="color" style="--color: #EEEEF0;"><p>White</p></div>
+                    <div class="color" style="--color: #E2DBCB;"><p>Ecru</p></div>
+                    <div class="color" style="--color: #FADBE0;"><p>Pink</p></div>
+                    <div class="color" style="--color: #F4B98D;"><p>Peach</p></div>
+                    <div class="color" style="--color: #F4A31C;"><p>Gold</p></div>
+                    <div class="color" style="--color: #2D3246;"><p>Midnight Blue</p></div>
+                    <div class="color" style="--color: #4B161C;"><p>Burgundy</p></div>
+                    <div class="color" style="--color: #B20007;"><p>Red</p></div>
+                    <div class="color" style="--color: #EA702D;"><p>Orange</p></div>
+                    <div class="color" style="--color: #1C1E2A;"><p>Navy</p></div>
+                    <div class="color" style="--color: #14341D;"><p>Forest Green</p></div>
+                    <div class="color" style="--color: #4B442A;"><p>Army</p></div>
+                    <div class="color" style="--color: #E2E2E4;"><p>White Marle</p></div>
+                    <div class="color" style="--color: #ADADAF;"><p>Gray Marle</p></div>
+                    <div class="color" style="--color: #363638;"><p>Asphalt Marle</p></div>
+                    <div class="color" style="--color: #323031;"><p>Coal</p></div>
+                    <div class="color" style="--color: #1C1C1C;"><p>Black</p></div>
+                    <!-- Add more color divs as needed -->
+                </div>
         </div>
 
     </section>
@@ -98,17 +146,20 @@
             <p>OR</p>
             <h2>Fill Out The Form</h2>
         </div>        
-        <div class="contact-form">        
-        <input type="text" id="name" name="name" placeholder="Your Name" required>
-        <input type="email" id="email" name="email"  placeholder="Your Email" required>
-        <textarea type="text" placeholder="Your Message" required></textarea>    
-        </div>
-        <div class="btn"><a href="#">Contact Us</a></div>
+        <form action="#">        
+            <input type="text" id="contactName" name="name" placeholder="Your Name" required>
+            <input type="email" id="contactEmail" name="email"  placeholder="Your Email" required>
+            <textarea id="contactMessage" name="message" rows="4" placeholder="Your Message"></textarea> 
+            <button type="submit">Contact Us</button> 
+            
+        </form>
+        
     </section>
 
     <footer>
         <p>Copyright © 2023 Anti Shark. All Rights Reserved.</p>
     </footer>
-    <script src="script.js"></script>   
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
