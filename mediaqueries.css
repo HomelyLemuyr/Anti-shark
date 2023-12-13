@@ -1,18 +1,6 @@
 /* Add these media queries for responsiveness */
 
 @media  screen and (max-width: 430px) {
-    section,
-    form {
-        padding: 10px; /* Adjust padding for smaller screens */
-    }
-
-    footer p {
-        padding: 10px;
-    }
-
-    #nav .nav-links {
-        padding: 10px;
-    }
 
     .nav-links a {
         font-size: 9px;
@@ -24,84 +12,13 @@
         letter-spacing: 10px;
     }
 
-    #about {
-        padding: 20px;
+    form input, 
+    textarea {
+        max-width: 400px;
     }
 
-    .info-form {
-        flex-direction: column;
-        padding: 20px;
-        gap: 10px;
-    }
-
-    #about h2 {
-        margin-top: 100px;
-        font-size: 30px;
-        letter-spacing: 6px;
-    }
-
-    .logo img {
-        width: 200px;
-        height: auto; /* Maintain aspect ratio */
-    }
-
-
-    .info-form p,
-    .socials p,
-    .product-form p {
-        max-width: 100%;
-    }
-
-    #products,
-    .product-form,
-    .product-form img,
-    #contacts,
-    .socials,
-    form {
-        padding: 20px;
-        flex-direction: column;
-        align-self: center;
-    }
-
-    .image {
-        flex-direction: column;
-        align-self: center;
-    }
-
-    .product-form img {
-        max-width: 100%;
-        padding: 10px;
-    }
-
-    .product-form p {
-        font-size: 12px;
-        padding: 10px;
-    }
-
-    .color {
-        width: 60px;
-        height: 60px;
-    }
-    .color p{
-        font-size: 8px;
-    }
-
-    .socials h2 {
-        font-size: 20px;
-        letter-spacing: 4px;
-    }
-
-    .socials p {
-        font-size: 25px;
-    }
-
-    form input,
-    form textarea {
-        width: 400px; /* Adjusted width to fit smaller screens */
-    }
 }
 
-}
 @media screen and (max-width: 600px) {
     section,
     form {
@@ -168,8 +85,6 @@
     .product-form img {
         max-width: 100%;
         padding: 10px;
-
-
     }
 
     .product-form p {
@@ -195,11 +110,7 @@
     }
 
     form input,
-    form textarea {
+    textarea {
         width: 500px; /* Adjusted width to fit smaller screens */
-    }
-
-    button {
-        width: 50%; /* Adjusted width to fit smaller screens */
     }
 }
