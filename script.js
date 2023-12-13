@@ -47,11 +47,11 @@ function sendEmail(){
 
     Email.send({
         Host : "smtp.elasticemail.com",
-        Username : "serafima.d.ershova@gmail.com", /* Change to your prefered email - create account with it on Elasticemail*/
-        Password : "437A014A724D2501DAD63CEEABBCFD23D470", /* Password on Elasticemail to your account - recieved after verification */
-        SecureToken : "58b91b58-1a2c-4627-9cd7-2b940cc222a1", /* You can generate it on the https://smtpjs.com/ */
-        To : 'serafima.d.ershova@gmail.com', /* Same as your Elastic account*/
-        From : 'serafima.d.ershova@gmail.com',
+        Username : "antisharkfinsoup@gmail.com", /* Change to your prefered email - create account with it on Elasticemail*/
+        Password : "CAFB2B0E8AABE4B83EBC4F124AB09654C8C5", /* Password on Elasticemail to your account - recieved after verification */
+        SecureToken : " aff955d0-8aa1-4882-97a0-15a9efe86714 ", /* You can generate it on the https://smtpjs.com/ */
+        To : 'antisharkfinsoup@gmail.com', /* Same as your Elastic account*/
+        From : 'antisharkfinsoup@gmail.com',
         Subject : "Contact from Anti Shark",
         Body : "Name: " + document.getElementById("contactName").value
             + "<br>Email: " +  document.getElementById("contactEmail").value
