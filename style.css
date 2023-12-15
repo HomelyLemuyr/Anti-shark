@@ -42,7 +42,8 @@ footer p{
     height: auto;
     z-index: 1000;
     flex-shrink: 0;
-    background: linear-gradient(to top, var(--white), var(--black)); /* Gradient colors, adjust as needed */
+    background-color: var(--white);
+    box-shadow: 0px 0px 1px 0px var(--gray);
     transition: background-color 0.3s ease;
 }
 
@@ -57,7 +58,7 @@ footer p{
 }
 
 .nav-links a {
-    color: var(--yellow);
+    color: var(--dark_gray);
     font-family: var(--Cutive);
     font-size: 15px;
     text-decoration: none;
@@ -66,14 +67,14 @@ footer p{
 }
 
 .nav-links a:hover {
-    color: var(--white);
+    color: var(--yellow);
     font-weight: bolder;
     letter-spacing: 15px;
 }
 
 /* Add this style for the active link */
 .nav-links a.active {
-    color: var(--white);
+    color: var(--yellow);
     font-weight: bolder;
     position: relative;
     font-size: 25px;

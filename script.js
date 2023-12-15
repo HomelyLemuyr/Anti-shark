@@ -39,7 +39,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
 
 /* Send Email */
-
+/** 
 const form = document.querySelector("form");
 
 function sendEmail(){
@@ -47,10 +47,10 @@ function sendEmail(){
 
     Email.send({
         Host : "smtp.elasticemail.com",
-        Username : "antisharkfinsoup@gmail.com", /* Change to your prefered email - create account with it on Elasticemail*/
-        Password : "CAFB2B0E8AABE4B83EBC4F124AB09654C8C5", /* Password on Elasticemail to your account - recieved after verification */
-        SecureToken : " aff955d0-8aa1-4882-97a0-15a9efe86714 ", /* You can generate it on the https://smtpjs.com/ */
-        To : 'antisharkfinsoup@gmail.com', /* Same as your Elastic account*/
+        Username : "antisharkfinsoup@gmail.com", 
+        Password : "CAFB2B0E8AABE4B83EBC4F124AB09654C8C5", 
+        SecureToken : " aff955d0-8aa1-4882-97a0-15a9efe86714 ", 
+        To : 'antisharkfinsoup@gmail.com', 
         From : 'antisharkfinsoup@gmail.com',
         Subject : "Contact from Anti Shark",
         Body : "Name: " + document.getElementById("contactName").value
@@ -67,3 +67,5 @@ form.addEventListener ("submit", (e) => {
     sendEmail();
 
 });
+
+*/
