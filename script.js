@@ -39,7 +39,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
 
 /* Send Email */
-/** 
+
 const form = document.querySelector("form");
 
 function sendEmail(){
@@ -68,4 +68,3 @@ form.addEventListener ("submit", (e) => {
 
 });
 
-*/
